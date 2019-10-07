@@ -20,6 +20,7 @@ function dispatch(action){
  
 render();
 
+//'@@INIT' is a convention
 dispatch({ type: '@@INIT' });
 
 dispatch({type: 'INCREASE_COUNT'});
