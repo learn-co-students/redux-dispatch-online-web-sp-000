@@ -7,18 +7,21 @@ function changeState(state, action){
       default:
         return state;
     }
-  }
+  };
  
 function render(){
-    document.body.textContent = state.count
-}
+    document.body.textContent = state.count;
+};
  
 function dispatch(action){
-  state = changeState(state, action)
-  render()
-}
+  state = changeState(state, action);
+  render();
+};
  
-render()
+render();
 
-dispatch({type: 'INCREASE_COUNT'})
-dispatch({type: 'INCREASE_COUNT'})
+dispatch({ type: '@@INIT' });
+
+dispatch({type: 'INCREASE_COUNT'});
+
+dispatch({type: 'INCREASE_COUNT'});
