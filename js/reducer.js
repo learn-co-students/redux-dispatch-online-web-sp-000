@@ -6,8 +6,19 @@ function changeState(state, action){
       return state;
   }
 }
+function render(){
+  document.body.textContent = state.count
+}
 
-let state = {count: 0}
-let action = {type: 'INCREASE_COUNT'}
+function dispatch(action){
+  state = changeState(state, action)
+  render()
+}
 
-changeState(state, action)
+render()
+
+// let state = {count: 0}
+// let action = {type: 'INCREASE_COUNT'}
+//
+// changeState(state, action)
+// dispatch({type: 'INCREASE_COUNT'})
