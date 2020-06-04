@@ -10,13 +10,13 @@ function changeState(state, action){
   }
 }
 
-function dispatch() {
+function dispatch(action) {
 	changeState(state, action)
 	render()
 }
 
 function render(){
-    document.body.textContent = state.count
+   document.body.textContent = state.count
 }
 
 render()
