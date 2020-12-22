@@ -1,6 +1,8 @@
 # Persisting State and Displaying State
 
-## Objectives
+## Objectives 
+
+
 
 In this code-along, you will learn the following:
 
